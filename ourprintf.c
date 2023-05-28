@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 
 	char buffer[BUFF_SIZE];
 	int buff_ind = 0;
+	int i;
 
 	if (format == NULL)
 		return (-1);
