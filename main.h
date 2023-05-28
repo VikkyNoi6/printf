@@ -33,8 +33,7 @@ buffer_t;
 
 /* Function prototypes for conversion specifiers */
 int _printf(const char *format, ...);
-int parser(const char *format, conver_t f_list[], va_list args);
-int _write - char(char);
+int _write_char(char);
 int print_uint(va_list args);
 int print_hex(va_list args);
 int print_bin(va_list args);
