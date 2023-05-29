@@ -1,7 +1,5 @@
 #include "main.h"
 
-#define BUFF_SIZE 1024
-
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
 *print_unsigned - Prints unsigned number
