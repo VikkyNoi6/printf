@@ -2,7 +2,7 @@
 
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
-*print_unsigned - Prints unsigned number
+*print_unsigned - Prints an  unsigned number
 *@buffer: Buffer array to print
 *@types: Argument lists
 *@flags:  Calculates the number of active flags
@@ -16,10 +16,6 @@ int flags, int width, int precision, int size)
 {
 	int y = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
-
-	long int convert_size_unsigned(unsigned long int num, int size);
-
-	num = convert_size_unsigned(num, size);
 
 	if (num == 0)
 		buffer[y--] = '0';
@@ -57,8 +53,6 @@ int print_octal(va_list types, char buffer[],
 	unsigned long int init_num = num;
 
 	UNUSED(width);
-
-	num = convert_size_unsigned(num, size);
 
 	if (num == 0)
 		buffer[y--] = '0';
@@ -137,8 +131,6 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 	unsigned long int init_num = num;
 
 	UNUSED(width);
-
-	num = convert_size_unsigned(num, size);
 
 	if (num == 0)
 		buffer[y--] = '0';
